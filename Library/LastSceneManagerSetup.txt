@@ -1,0 +1,4 @@
+sceneSetups:
+- path: game-dev.git/Level1_Test.unity
+  isLoaded: 1
+  isActive: 1
