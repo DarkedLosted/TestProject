@@ -5,10 +5,9 @@ public class MainCamera : MonoBehaviour
 {
     public Transform camera_child;
     public Transform camera_transform;
-    //public bool camera_rotate;
     public float camera_speed = 10;
-    public float camera_height = 15;
-    public float rotate_speed = 5;
+    public float camera_height = 5;
+    public float rotate_speed = 1;
     public float zoom_speed = 5;
     public float camera_angle = 45;
 
@@ -48,11 +47,11 @@ public class MainCamera : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.Q))
         {
-            transform.Rotate(0, 0.5f * rotate_speed, 0);
+            transform.Rotate(0, 0.1f * -rotate_speed, 0);
         }
         else if (Input.GetKey(KeyCode.E))
         {
-            transform.Rotate(0, 0.5f * -rotate_speed, 0);
+            transform.Rotate(0, 0.1f * rotate_speed, 0);
         }
         else if (Input.GetMouseButton(2))
         {
