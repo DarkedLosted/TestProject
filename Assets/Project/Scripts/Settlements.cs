@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Fort : MonoBehaviour {
 
+
+
     public class Settlement
     {
         private bool type;
@@ -28,7 +30,10 @@ public class Fort : MonoBehaviour {
         Castle castle = new Castle();
         castle.SetType(true);
 
-	}
+      
+
+        
+    }
 	
 	void Update () {
 	    
